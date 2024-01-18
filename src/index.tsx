@@ -1,11 +1,9 @@
-import React from 'react';
+/* eslint-disable react/react-in-jsx-scope */
+/* eslint-disable react/no-deprecated */
 import ReactDOM from 'react-dom';
-import './index.scss';
-import { App } from './App';
+import { Root } from './Root';
 
 ReactDOM.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>,
-  document.getElementById('root'),
+  <Root />,
+  document.getElementById('root') as HTMLDivElement,
 );
